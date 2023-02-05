@@ -21,14 +21,58 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
+            background-color: black;
+            
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+
             
         }
 
+        .sidenav a {
+            padding: 10px 10px 18px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            margin-right: 35px;
+            align-items: center;
+
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+            text-decoration: none;
+
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 45px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
         .navbar {
-          
-            justify-content: space-between;
             align-items: center;  
-            
+            background-color: black;
             position: relative;
             width: 100%;
         }
@@ -37,18 +81,33 @@
             color: white;
             text-decoration: none;
             font-size: 25px;
+            text-align: center;
         }
         
         .navbar a:hover {
             color:#f1f1f1;
         }
-        .row {
-            padding-left: 14%;
+        .headline {
+            text-align: center;
+            flex: 1;
         }
-
         .card {
             margin: 12px;
             padding: 20px;
+            align-self: center;
+            transition: all 0.3s;
+            border-radius: 12px;
+        }
+        .card img {
+            border-radius: 12px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(92, 90, 90, 0.381);
+        }
+        .card:hover {
+            transform: scale(1.2);
+        }
+        .container {
+            margin-left: auto;
         }
 
     </style>
@@ -57,23 +116,32 @@
 
 </head>
 <body>
-    <div class="navbar bg-dark justify-content-center d-flex">
-        <h1 class="headline ">
+    <div class="navbar">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br/><br/>
+            <a href="2X2_algs.html" style="text-align: center;">2X2</a>
+            <a href="3X3_algs.html" style="text-align: center;">3X3</a>
+            <a href="4X4_algs.html" style="text-align: center;">4X4</a>
+            <a href="5X5_algs.html" style="text-align: center;">5X5</a>
+            <a href="pyra_algs.html" style="text-align: center;">Pyraminx</a>
+            <a href="square-1.html" style="text-align: center;">Square-1</a>
+        </div>
+            <span style="font-size:45px;cursor:pointer; color: white; margin-left: 10px;" onclick="openNav()">&#9776; </span>
+        <h1 class="headline">
             <a href="index.html"><span style="font-size: 45px;">Cubing Plus Ultra</span></a>
         </h1> 
-
-    </div>
-    <div class="info">
-        <p></p>
-    </div>
+    </div>    
+    
         
-        <div class="row align-self-center row-cols-3 row-cols-lg-4 row-cols-md-4 row-cols-sm-2">
+        <div class="row row-cols-4 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 justify-content-center mt-4">
        
-            <div class="card card shadow-sm" style="width: 18rem; background-color: black;">
+            <div class="card d-lg-inline-flex" style="width: 18rem; background-color:black;">
                 <img src="logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" style="color: white; text-align: center; font-size: 25px;">2X2</h5>
-                    <a href="2X2_algs.html" class=" stretched-link"></a>
+                    <a href="2X2_algs.html" class=" stretched-link rounded-2"></a>
                 </div>
             </div>
 
@@ -84,41 +152,48 @@
                     <a href="3X3_algs.html" class=" stretched-link"></a>
                 </div>
             </div>
-
             <div class="card " style="width: 18rem; background-color: black;">
                 <img src="logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: white; text-align: center;">Pyraminx</h5>
-                    <a href="3X3_algs.html" class=" stretched-link"></a>
+                    <h5 class="card-title" style="color: white; text-align: center; font-size: 25px;">4X4</h5>
+                    <a href="4X4_algs.html" class=" stretched-link"></a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; background-color: black;">
+                <img src="logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white; text-align: center; font-size: 25px;">5X5</h5>
+                    <a href="5X5_algs.html" class=" stretched-link"></a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem; background-color: black;">
                 <img src="logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: white; text-align: center;">Square-1</h5>
-                    <a href="3X3_algs.html" class=" stretched-link"></a>
+                    <h5 class="card-title" style="color: white; text-align: center; font-size: 25px;">Square-1</h5>
+                    <a href="square-1.html" class=" stretched-link"></a>
                 </div>
-            </div>
-
+            </div>   
             <div class="card " style="width: 18rem; background-color: black;">
                 <img src="logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="color: white; text-align: center;">4X4</h5>
-                    <a href="3X3_algs.html" class=" stretched-link"></a>
+                    <h5 class="card-title" style="color: white; text-align: center; font-size: 25px;">Pyraminx</h5>
+                    <a href="pyra_algs.html" class=" stretched-link"></a>
                 </div>
-            </div>
-
-            <div class="card " style="width: 18rem; background-color: black;">
-                <img src="logo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" style="color: white; text-align: center;">5X5</h5>
-                    <a href="3X3_algs.html" class=" stretched-link"></a>
-                </div>
-            </div>
-        </div> 
-</div>   
+            </div>  
+        </div>
+           
 </body>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
 <script href="./bootstrap/js/bootstrap.js"></script>
 
 </html>
