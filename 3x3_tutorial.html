@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatibile" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cubing Plus Ultra</title>
+    <link rel="icon" href="favicon.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link href="./bootstrap/css/bootstrap.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     
     
@@ -21,124 +18,63 @@
             font-family: 'Open Sans', sans-serif;
             background-color: white;
         }
-
-        .headline {
-            color: white;
-            flex: 1;
-            text-align: center;
-            
-        }
-
-        
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: black;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-
-            
-        }
-
-        .sidenav a {
-            padding: 10px 10px 18px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: white;
-            display: block;
-            transition: 0.3s;
-            margin-right: 35px;
-            align-items: center;
-
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-            text-decoration: none;
-
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 45px;
-            margin-left: 50px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-    
-        .image-container {
-            background-color: white;
-            padding: 20px;
-                
-        }
-
-        .header-image {
-            width: 100%;
-            display: flex;
-            object-fit: cover;
-            object-position: 30% 40%;
-            
-        }
-
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;  
-            background-color: black;
-            width: auto;
-            
+            background-color: #002244;
+        }
+        .navbar .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        }
+        .navbar-collapse {
+            margin-top: 20px;
+        }
+        .navbar-light .navbar-toggler {
+            border: 1px solid white;
             
         }
-        
-        .navbar a {
+        .navbar-brand {
             color: white;
-            text-decoration: none;
-            font-size: 25px;
-            
-
+            transform: translateY(-5px);
+            max-width: 67px;
+            max-height: 61px;
         }
-        
-        .navbar a:hover {
-            color:#f1f1f1;
+        .navbar-brand a:hover {
+            color: white;
         }
-
-        .header-image a:hover {
-            background-color: black;
-
+        .nav-link {
+            color: #FFFF;
         }
-        .subheadline {
-            text-align: center;
-            background-color: white;  
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            padding-top: 20px;
-            padding-bottom: 20px; /* 16:9 Aspect Ratio */  
+        .btn-dark {
+            background-color: #002244;
+            border: none;
+            font-size: 1.6em; 
+            font-weight: bold; 
+            transform: translateY(-5px);
         }
-        .subheadline a {
-            text-decoration: none;
-            font-size: 30px; 
-            text-align: center;
-            color: black;
-            margin-bottom: 10px;
-            
-            
+        .btn :hover {
+            background-color: none;
+        }     
+        .dropdown-item {
+            color: #FFFF;
+        }
+        .dropdown-menu {
+            background-color: #002244;
+            border: none;
+        }
+        .dropdown-menu a:hover {
+            background-color: #4d5154;
+            color: white;
         }
         iframe {
             width: 70vw;
             max-width: 560px;
             height: calc((9/16)*70vw);
             max-height: calc((9/16)*560px);
+            box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.5s;
+            border-radius: 4px;
+        }            
+        iframe:hover {
+            transform: scale(1.05);
         }
 
     </style>
@@ -146,53 +82,100 @@
        
 
 </head>
-<body>
-    <div class="navbar">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <br/><br/>
-            <a href="2X2_algs.html" style="text-align: center;">2X2</a>
-            <a href="3X3_algs.html" style="text-align: center;">3X3</a>
-            <a href="4X4_algs.html" style="text-align: center;">4X4</a>
-            <a href="5X5_algs.html" style="text-align: center;">5X5</a>
-            <a href="pyra_algs.html" style="text-align: center;">Pyraminx</a>
-            <a href="square-1.html" style="text-align: center;">Square-1</a>
-        </div>
-            <span style="font-size:45px;cursor:pointer; color: white; margin-left: 10px;" onclick="openNav()">&#9776; </span>
-            
-        <h1 class="headline">
-            <a href="index.html"><span style="font-size: 45px;">Cubing Plus Ultra</span></a>
-        </h1> 
-
-    </div>    
-    <div class="subheadline">
-        <h1>beginner (LbL/ Layer by Layer)</h1>
-        
-        <iframe src="https://www.youtube.com/embed/7Ron6MN45LY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="subheadline">
-        <h1>intermediate (2-look PLL and OLL)</h1>
-        <iframe src="https://www.youtube.com/embed/GhmYBgLoQQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/f_Yor-ydZjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="subheadline">
-        <h1>advanced (CFOP)</h1>
-        <iframe src="https://www.youtube.com/embed/9r_HqG4zSbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/vU6HsK3hvQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>    
-</body>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-
-    </script>
-
-    <script src="./bootstrap/js/bootstrap.js"></script>
-
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light text-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Webdesign_Logo.png" alt="Logo" width="67px" height="61px" class="d-inline-block align-text-top" style="background-color: #4d5154; border-radius: 8px; border: 3px; transform: translate(-5px);">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown text-center">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >
+                      2x2
+                    </button>
+                    <ul class="dropdown-menu text-center">
+                      <li><a class="dropdown-item" href="2x2_tutorial.html"> 2x2 tutorials </a></li>
+                      <li><a class="dropdown-item" href="#">2x2 tipps & tricks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <button class="btn btn-dark dropdown-toggle text-center" data-bs-toggle="dropdown" aria-expanded="false">
+                      3x3
+                    </button>
+                    <ul class="dropdown-menu text-center">
+                      <li><a class="dropdown-item " href="3x3_tutorial.html">3x3 tutorials (beginner to advanced)</a></li>
+                      <li><a class="dropdown-item " href="#">3x3 tipps & tricks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      4x4
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="4x4_tutorial.html">4x4 tutorials (beginner to advanced)</a></li>
+                      <li><a class="dropdown-item" href="#">4x4 tipps & tricks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      5x5
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="5x5_tutorial.html">5x5 tutorials (beginner to advanced)</a></li>
+                      <li><a class="dropdown-item" href="#">5x5 tipps & tricks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Square-1
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Square-1_tutorial.html">Square-1 tutorials (beginner to advanced)</a></li>
+                      <li><a class="dropdown-item" href="#">Square-1 tipps & tricks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pyraminx
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="pyraminx_tutorial.html">Pyraminx tutorials (beginner to advanced)</a></li>
+                      <li><a class="dropdown-item" href="#">Pyraminx tipps & tricks</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <center>
+            <div class="subheadline mt-5">
+                <h1>beginner</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v8Fdu8to0fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="paragraph mt-2">Get your beginner algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf">CubeSkills</a> (Feliks Zemdegs)</p>
+            </div>
+        </center>
+        <hr style="border-top: dotted 1px;"/>
+        <center>
+            <div class="subheadline mt-5">
+                <h1>intermediate (2-look OLL & PLL) </h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GhmYBgLoQQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="paragraph mt-2">Get your OLL algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf"> CubeSkills </a>Feliks Zemdegs </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f_Yor-ydZjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="paragraph mt-2">Get your intermediate algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf">CubeSkills</a> (Feliks Zemdegs)</p>
+                
+            </div>
+        </center>
+        <hr style="border-top: dotted 1px;"/>
+        <center>
+            <div class="subheadline mt-5">
+                <h1>advanced (OLL & PLL)</h1>
+                <iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/zwHw7rFIOlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="paragraph mt-2">Get your advanced algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf">CubeSkills</a> (Feliks Zemdegs)</p>
+            </div>
+        </center>
+    </body>
 </html>
