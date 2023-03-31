@@ -5,96 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Cubing Plus Ultra</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="images/favicon.png">
 
     <script defer src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    
-    
-    
-    <style>
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: white;
-        }
-        .navbar {
-            background-color: #002244;
-        }
-        .navbar-nav {
-            align-items: center;
-        }
-        .navbar .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-        }
-        .navbar-collapse {
-            margin-top: 20px;
-        }
-        .navbar-light .navbar-toggler {
-            border: 1px solid white;
-            
-        }
-        .navbar-brand {
-            color: white;
-            transform: translateY(-5px);
-            max-width: 67px;
-            max-height: 61px;
-        }
-        .navbar-brand a:hover {
-            color: white;
-        }
-        .nav-link {
-            color: #FFFF;
-        }
-        .btn-dark {
-            background-color: #002244;
-            border: none;
-            font-size: 1.6em; 
-            font-weight: bold; 
-            transform: translateY(-5px);
-        }
-        .btn :hover {
-            background-color: none;
-        }     
-        .dropdown-item {
-            color: #FFFF;
-        }
-        .dropdown-menu {
-            background-color: #002244;
-            border: none;
-            margin: 10px;
-        }
-        .dropdown-menu a:hover {
-            background-color: #4d5154;
-            color: white;
-        }
-        .card {
-            margin: 12px;
-            padding: 20px;
-            align-self: center;
-            transition: all 0.3s;
-            border-radius: 12px;
-            width: 18rem; 
-            background-color: #FB4F14;
-            box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        .card img {
-            border-radius: 12px;
-            margin: 0 auto;
-            background-color: #FB4F14;
-        }
-        .card:hover {
-            transform: scale(1.1);
-        }
-        .card-title {
-            color: #F7F9F8;
-            text-align: center; 
-            font-size: 35px;
-            font-weight: bolder;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
 
        
 
@@ -103,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light text-center">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="Webdesign_Logo.png" alt="Logo" width="67px" height="61px" class="d-inline-block align-text-top" style="background-color: #4d5154; border-radius: 8px; border: 3px; transform: translate(-5px);">
+                <img src="images/Webdesign_Logo.png" alt="Logo" width="67px" height="61px" class="d-inline-block align-text-top" style="background-color: #4d5154; border-radius: 8px; border: 3px; transform: translate(-5px);">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -116,7 +33,6 @@
                 </button>
                 <ul class="dropdown-menu text-center">
                   <li><a class="dropdown-item" href="2x2_tutorial.html"> 2x2 tutorials </a></li>
-                  <li><a class="dropdown-item" href="#">2x2 tipps & tricks</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown ">
@@ -125,7 +41,6 @@
                 </button>
                 <ul class="dropdown-menu text-center">
                   <li><a class="dropdown-item " href="3x3_tutorial.html">3x3 tutorials (beginner to advanced)</a></li>
-                  <li><a class="dropdown-item " href="#">3x3 tipps & tricks</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -134,7 +49,6 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="4x4_tutorial.html">4x4 tutorials (beginner to advanced)</a></li>
-                  <li><a class="dropdown-item" href="#">4x4 tipps & tricks</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -143,7 +57,6 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="5x5_tutorial.html">5x5 tutorials (beginner to advanced)</a></li>
-                  <li><a class="dropdown-item" href="#">5x5 tipps & tricks</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -152,7 +65,6 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="Square-1_tutorial.html">Square-1 tutorials (beginner to advanced)</a></li>
-                  <li><a class="dropdown-item" href="#">Square-1 tipps & tricks</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -161,63 +73,62 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="pyraminx_tutorial.html">Pyraminx tutorials (beginner to advanced)</a></li>
-                  <li><a class="dropdown-item" href="#">Pyraminx tipps & tricks</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="container">
-        <p>This Website contains all you need for your cubing journey. You can find awesome algorithms or even tutorials from beginner to advanced level. These algs and turoials are from well known speedcubers.</p>
-      </div>
       <div class="row row-cols-3 justify-content-center mt-4">
-       
-            <div class="card d-lg-inline-flex" >
-                <img src="2x2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">2x2</h5>
-                    <a href="2x2_tutorial.html" class=" stretched-link rounded-2"></a>
-                </div>
-            </div>
-
-            <div class="card ">
-                <img src="3x3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">3x3</h5>
-                    <a href="3x3_tutorial.html" class=" stretched-link"></a>
-                </div>
-            </div>
-            <div class="card ">
-                <img src="4x4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">4x4 </h5>
-                    <a href="4x4_tutorial.html" class=" stretched-link"></a>
-                </div>
-            </div>
+          <div class="card d-lg-inline-flex" >
+              <img src="images/2x2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">2x2</h5>
+                  <a href="2x2_tutorial.html" class=" stretched-link rounded-2"></a>
+              </div>
+          </div>
+          <div class="card ">
+              <img src="images/3x3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">3x3</h5>
+                  <a href="3x3_tutorial.html" class=" stretched-link"></a>
+              </div>
+          </div>
+          <div class="card ">
+              <img src="images/4x4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">4x4 </h5>
+                  <a href="4x4_tutorial.html" class=" stretched-link"></a>
+              </div>
+          </div>
         </div>
         <div class="row row-cols-3 justify-content-center mt-4">
             <div class="card " >
-                <img src="4x4.png" class="card-img-top" alt="...">
+                <img src="images/4x4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">5x5</h5>
                     <a href="5x5_tutorial.html" class=" stretched-link"></a>
                 </div>
             </div>
             <div class="card">
-                <img src="3x3.png" class="card-img-top" alt="...">
+                <img src="images/3x3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" >Square-1</h5>
                     <a href="square-1_tutorial.html" class=" stretched-link"></a>
                 </div>
             </div>   
             <div class="card ">
-                <img src="2x2.png" class="card-img-top" alt="...">
+                <img src="images/2x2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" >Pyraminx</h5>
                     <a href="pyraminx_tutorial.html" class=" stretched-link"></a>
                 </div>
             </div>  
+        </div>
+        <div class="imprint p-2 mt-3">
+          <center>
+            <a href="imprint.html"><p>imprint</p></a>
+          </center>
         </div>
       </body>
     </html>
