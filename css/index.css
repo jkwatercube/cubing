@@ -59,14 +59,19 @@
         align-self: center;
         transition: all 0.3s;
         border-radius: 12px;
-        width: 18rem; 
+        width: 17rem; 
+        height: 21.5rem;
         background-color: #FB4F14;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow:  0 4px 8px 0 rgba(151, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
     }
     .card img {
         border-radius: 12px;
         margin: 0 auto;
         background-color: #FB4F14;
+        height: 80%;
+        width: 80%;
+        
     }
     .card:hover {
         transform: scale(1.1);
@@ -77,13 +82,15 @@
         font-size: 35px;
         font-weight: bolder;
     }
-    .imprint {
+    .legal_notice {
         background-color: #002244;
         color:#FFFF;
         align-items: baseline;
+        text-decoration: none;
+        font-size: 1.2rem;
     
     } 
-    .imprint-content a {
+    .legal_notice a {
         text-decoration: none;
-        color:#FFFF; 
+        color: #FFFF;
     }
