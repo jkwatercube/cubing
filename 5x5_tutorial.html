@@ -1,80 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cubing Plus Ultra</title>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="images/favicon.png">
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: white;
-        }
-        .navbar {
-            background-color: #002244;
-        }
-        .navbar .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-        }
-        .navbar-collapse {
-            margin-top: 20px;
-        }
-        .navbar-light .navbar-toggler {
-            border: 1px solid white;
-            
-        }
-        .navbar-brand {
-            color: white;
-            transform: translateY(-5px);
-            max-width: 67px;
-            max-height: 61px;
-        }
-        .navbar-brand a:hover {
-            color: white;
-        }
-        .nav-link {
-            color: #FFFF;
-        }
-        .btn-dark {
-            background-color: #002244;
-            border: none;
-            font-size: 1.6em; 
-            font-weight: bold; 
-            transform: translateY(-5px);
-        }
-        .btn :hover {
-            background-color: none;
-        }     
-        .dropdown-item {
-            color: #FFFF;
-        }
-        .dropdown-menu {
-            background-color: #002244;
-            border: none;
-        }
-        .dropdown-menu a:hover {
-            background-color: #4d5154;
-            color: white;
-        }
-        iframe {
-            width: 70vw;
-            max-width: 560px;
-            height: calc((9/16)*70vw);
-            max-height: calc((9/16)*560px);
-            box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            transition: 0.5s;
-            border-radius: 4px;
-        }            
-        iframe:hover {
-            transform: scale(1.05);
-        }          
 
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
 
        
 
@@ -83,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light text-center">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="Webdesign_Logo.png" alt="Logo" width="67px" height="61px" class="d-inline-block align-text-top" style="background-color: #4d5154; border-radius: 8px; border: 3px; transform: translate(-5px);">
+                    <img src="images/Webdesign_Logo.png" alt="Logo" width="67px" height="61px" class="d-inline-block align-text-top" style="background-color: #4d5154; border-radius: 8px; border: 3px; transform: translate(-5px);">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -96,7 +33,6 @@
                     </button>
                     <ul class="dropdown-menu text-center">
                     <li><a class="dropdown-item" href="2x2_tutorial.html"> 2x2 tutorials </a></li>
-                    <li><a class="dropdown-item" href="#">2x2 tipps & tricks</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown ">
@@ -105,7 +41,6 @@
                     </button>
                     <ul class="dropdown-menu text-center">
                     <li><a class="dropdown-item " href="3x3_tutorial.html">3x3 tutorials (beginner to advanced)</a></li>
-                    <li><a class="dropdown-item " href="#">3x3 tipps & tricks</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -114,7 +49,6 @@
                     </button>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="4x4_tutorial.html">4x4 tutorials (beginner to advanced)</a></li>
-                    <li><a class="dropdown-item" href="#">4x4 tipps & tricks</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -123,7 +57,6 @@
                     </button>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="5x5_tutorial.html">5x5 tutorials (beginner to advanced)</a></li>
-                    <li><a class="dropdown-item" href="#">5x5 tipps & tricks</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -132,7 +65,6 @@
                     </button>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Square-1_tutorial.html">Square-1 tutorials (beginner to advanced)</a></li>
-                    <li><a class="dropdown-item" href="#">Square-1 tipps & tricks</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -141,7 +73,6 @@
                     </button>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="pyraminx_tutorial.html">Pyraminx tutorials (beginner to advanced)</a></li>
-                    <li><a class="dropdown-item" href="#">Pyraminx tipps & tricks</a></li>
                     </ul>
                 </li>
                 </ul>
@@ -155,7 +86,7 @@
                 <p class="paragraph mt-2">Get your beginner algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf">CubeSkills</a> (Feliks Zemdegs)</p>
             </div>
         </center>
-        <hr style="border-top: dotted 1px;"/>
+        <hr style="border-top: dotted 2px;"/>
         <center>
             <div class="subheadline mt-4">
                 <h1>intermediate </h1>
@@ -163,7 +94,7 @@
                 <p class="paragraph mt-2">Get your intermediate algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf">CubeSkills</a> (Feliks Zemdegs)</p>
             </div>
         </center>
-        <hr style="border-top: dotted 1px;"/>
+        <hr style="border-top: dotted 2px;"/>
         <center>
             <div class="subheadline mt-4">
                 <h1>advanced </h1>
@@ -171,5 +102,10 @@
                 <p class="paragraph mt-2">Get your advanced algorithms from <a style="text-decoration: none;" href="PDF_algs/beginners-method-for-solving-the-5x5-cube.pdf">CubeSkills</a> (Feliks Zemdegs)</p>
             </div>
         </center> 
+        <div class="impressum p-2 mt-3">
+            <center>
+              <a href="imprint.html"></a><p>imprint</p>
+            </center>
+        </div>
     </body>
 </html>
